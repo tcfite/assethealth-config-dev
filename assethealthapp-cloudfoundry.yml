@@ -19,6 +19,7 @@ logging:
     level:
         com.bmcd.asset.health.uaa: DEBUG
         io.github.jhipster: DEBUG
+        com.netflix.discovery: DEBUG
 spring:
     data:
         jest:
