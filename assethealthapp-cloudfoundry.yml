@@ -17,9 +17,6 @@ eureka:
         prefer-ip-address: false
         hostname: ${vcap.application.uris[0]}
         nonSecurePort: 80
-    client:
-        service-url:
-            defaultZone: ${vcap.services.p-service-registry[0].credentials.uri:https://admin:${jhipster.registry.password}@assethealthregistry.cfapps.io/eureka/}
 logging:
     level:
         com.bmcd.asset.health.uaa: DEBUG
@@ -27,7 +24,7 @@ logging:
 spring:
     data:
         jest:
-             uri: https://cloudfoundry:3ac6c0902d80cab651dd976c5b2958db@thorin-us-east-1.searchly.com
+             uri: https://cloudfoundry:2efb39ac294a4d5af8b7686f46869565@thorin-us-east-1.searchly.com
 liquibase:
         contexts: demo
 jhipster:
